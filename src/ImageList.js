@@ -32,13 +32,11 @@ export default class ImageList extends Component {
                 .filter(entry => (entry.keyword === this.props.keyword) || !this.props.keyword)
                 .filter(entry => (String(entry.horns) === String(this.props.horn)) || !this.props.horn)
                 //map
-                .map(entry =>
-                <ImageItem 
-                    {...entry}
-                />
-                )
+                .map(entry => {
+                        return <ImageItem 
+                        {...entry}
+                        /> }) 
             }
             </div>
         )
-    }
-}
+}}
