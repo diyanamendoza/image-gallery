@@ -38,3 +38,12 @@ h3, p, select {
 h2 {
   font-family: 'Major Mono Display', monospace;
 }
+
+.welcome-div {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
